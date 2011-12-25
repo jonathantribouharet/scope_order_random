@@ -8,11 +8,7 @@ module ActiveRecord::Acts::ScopeOrderRandom
   end
 
 	module ClassMethods
-		
-		puts ActiveRecord::Base.connection_config.inspect
-		puts ActiveRecord::Base.connection_config[:adapter]
-		puts ActiveRecord::Base.connection_config['adapter']
-		
+				
 		if ActiveRecord::Base.connection_config[:adapter] == "sqlite3"
 			def order_random
 				order("RANDOM()")
