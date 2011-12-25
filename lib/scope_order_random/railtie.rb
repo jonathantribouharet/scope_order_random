@@ -1,7 +1,9 @@
-# module ScopeOrderRandom
-  # class Railtie < Rails::Railtie
-		# initializer "scope_order_random.initialize", :after => true do
-			# ActiveRecord::Base.send(:include, ActiveRecord::Acts::ScopeOrderRandom)
-    # end
-  # end
-# end
+module ScopeOrderRandom
+  class Railtie < Rails::Railtie
+		initializer "scope_order_random.initialize", :after => true do |app|
+			app.config.after_initialize do
+				require 'base'
+			end
+    end
+  end
+end
