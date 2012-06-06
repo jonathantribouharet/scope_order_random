@@ -1,11 +1,9 @@
 module ActiveRecord; module Acts; end; end
 module ActiveRecord::Acts::ScopeOrderRandom
 
-  def self.included(klass)
-		klass.class_eval do
-			extend(ClassMethods)
-		end
-  end
+	def self.included(base)
+			base.extend(ClassMethods)
+	end
 
 	module ClassMethods
 
