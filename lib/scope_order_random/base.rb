@@ -7,14 +7,14 @@ module ActiveRecord::Acts::ScopeOrderRandom
 
 	module ClassMethods
 
-		if ActiveRecord::Base.connection_config[:adapter] == "sqlite3"
-			def order_random
-				order("RANDOM()")
-			end
-		else
-			# PostgreSQL or MySQL
+		if ActiveRecord::Base.connection_config[:adapter] == "mysql"
 			def order_random
 				order("RAND()")
+			end
+		else
+			# PostgreSQL or SQLite3
+			def order_random
+				order("RANDOM()")
 			end
 		end
 		
