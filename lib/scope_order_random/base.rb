@@ -2,7 +2,7 @@ module ActiveRecord; module Acts; end; end
 module ActiveRecord::Acts::ScopeOrderRandom
 
 	def self.included(base)
-			base.extend(ClassMethods)
+		base.extend(ClassMethods)
 	end
 
 	module ClassMethods
@@ -18,7 +18,7 @@ module ActiveRecord::Acts::ScopeOrderRandom
 			end
 		end
 		
-  end
+	end
 
 end
 
