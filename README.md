@@ -2,7 +2,7 @@ scope_order_random
 ======================
 
 A plugin for implement order_random scope in your model.
-Compatible only with PostgreSQL, MySQL and SQLite.
+Use `order('RAND()')` for MySQL and `order('RANDOM()')` for other (supposed PostgreSQL or SQLite)
 
 Installation
 ------------
