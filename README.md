@@ -9,7 +9,7 @@ Installation
 
 Include the gem in your Gemfile:
 
-    gem 'scope_order_random', :git => 'https://github.com/eviljojo22/scope_order_random'
+    gem 'scope_order_random', :git => 'https://github.com/jonathantribouharet/scope_order_random'
 
 
 Usage

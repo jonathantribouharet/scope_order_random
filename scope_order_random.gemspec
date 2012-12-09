@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
 	s.name = "scope_order_random"
 	s.platform = Gem::Platform::RUBY
 	s.summary = "A plugin for implement order_random scope in your model."
-	s.homepage = "https://github.com/eviljojo22/scope_order_random"
+	s.homepage = "https://github.com/jonathantribouharet/scope_order_random"
 	s.require_paths = ["lib"]
 	s.version = "1.0"
 	s.author = "Jonathan TRIBOUHARET"
